@@ -12,7 +12,7 @@ namespace ManageIT
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app1);
+            ConfigureAuth(app);
         }
     }
 }
