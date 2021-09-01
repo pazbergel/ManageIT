@@ -15,6 +15,11 @@ namespace ManageIT.Controllers
             return View(new ActiveDirectoryModels());
         }
 
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
+
         // GET: ADMvc/Details/5
         public ActionResult Details(int id)
         {
