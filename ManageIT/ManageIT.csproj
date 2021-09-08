@@ -238,7 +238,9 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="assets\css\material-dashboard-rtl.css" />
-    <Content Include="assets\css\material-dashboard.css" />
+    <Content Include="assets\css\material-dashboard.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\css\material-dashboard.min.css" />
     <Content Include="assets\demo\demo.css" />
     <Content Include="assets\demo\demo.js" />
