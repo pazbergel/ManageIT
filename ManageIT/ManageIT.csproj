@@ -547,6 +547,7 @@
     <Content Include="Scripts\knockout.validation.min.js.map" />
     <Content Include="Views\ADMvc\Index.cshtml" />
     <Content Include="Views\ADMvc\Dashboard.cshtml" />
+    <Content Include="Views\ADMvc\newuserlist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
