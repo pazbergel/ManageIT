@@ -545,6 +545,9 @@
     <Content Include="Views\ADMvc\Index.cshtml" />
     <Content Include="Views\ADMvc\Dashboard.cshtml" />
     <Content Include="Views\ADMvc\newuserlist.cshtml" />
+    <Content Include="Views\ADMvc\lockeduserslist.cshtml" />
+    <Content Include="Views\ADMvc\usermanagement.cshtml" />
+    <Content Include="Views\ADMvc\compmanagement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

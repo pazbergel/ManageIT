@@ -43,24 +43,24 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action("Dashboard", "ADMvc")">
+                        <a class="nav-link" href="@Url.Action(" Dashboard", "ADMvc" )">
                             מסך ראשי
                             <i class="material-icons">dashboard</i>
                         </a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="@Url.Action("newuserlist", "ADMvc")">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="@Url.Action(" newuserlist", "ADMvc" )">
                             עובדים חדשים
                             <i class="material-icons">person</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action("lockeduserslist", "ADMvc")">
+                        <a class="nav-link" href="@Url.Action(" lockeduserslist", "ADMvc" )">
                             משתמשים נעולים
                             <i class="material-icons">lock</i>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link" href="@Url.Action(" usermanagement", "ADMvc" )">
                             ניהול משתמשים
                             <i class="material-icons">person</i>
@@ -141,36 +141,18 @@ The above copyright notice and this permission notice shall be included in all c
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-success txt-right">
+                                    <h4 class="card-category">ניהול משתמשים</h4>
+                                </div>
+                                <br />
+                            </div>
                             <div class="input-group no-border">
                                 <input type="text" value="" class="form-control" placeholder='סינון לפי שם מלא או תעודת זהות'>
                                 <button type="submit" class="btn btn-white btn-round btn-just-icon">
                                     <i class="material-icons">search</i>
                                     <div class="ripple-container"></div>
                                 </button>
-                            </div>
-                            <br />
-                            <div class="card">
-                                <div class="card-header card-header-success txt-right">
-                                    <h4 class="card-category">עובדים חדשים</h4>
-                                </div>
-                                <div class="list-group txt-right">
-                                    <a class="list-group-item list-group-item-success">
-                                        רשומות חדשות שנקלטו
-                                    </a>
-                                    <table class="table table-hover">
-                                        <thead class="text">
-                                        <th><b>תת קבוצת העובד</b></th>
-                                        <th><b>קבוצת העובד</b></th>
-                                        <th><b>מספר פלאפון</b></th>
-                                        <th><b>תעודת זהות</b></th>
-                                        <th><b>האם דחוף</b></th>
-                                        <th><b>שם מלא</b></th>
-                                        <th></th>
-                                        </thead>
-                                        <tbody>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
                         </div>
                     </div>

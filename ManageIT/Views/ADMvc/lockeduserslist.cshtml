@@ -48,22 +48,22 @@ The above copyright notice and this permission notice shall be included in all c
                             <i class="material-icons">dashboard</i>
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("newuserlist", "ADMvc")">
                             עובדים חדשים
                             <i class="material-icons">person</i>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item  active">
                         <a class="nav-link" href="@Url.Action("lockeduserslist", "ADMvc")">
                             משתמשים נעולים
                             <i class="material-icons">lock</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action(" usermanagement", "ADMvc" )">
+                        <a class="nav-link" href="@Url.Action("usermanagement", "ADMvc")">
                             ניהול משתמשים
-                            <i class="material-icons">person</i>
+                            <i class="material-icons">lock</i>
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -151,7 +151,7 @@ The above copyright notice and this permission notice shall be included in all c
                             <br />
                             <div class="card">
                                 <div class="card-header card-header-success txt-right">
-                                    <h4 class="card-category">עובדים חדשים</h4>
+                                    <h4 class="card-category">משתמשים נעולים</h4>
                                 </div>
                                 <div class="list-group txt-right">
                                     <a class="list-group-item list-group-item-success">
@@ -159,12 +159,9 @@ The above copyright notice and this permission notice shall be included in all c
                                     </a>
                                     <table class="table table-hover">
                                         <thead class="text">
-                                        <th><b>תת קבוצת העובד</b></th>
-                                        <th><b>קבוצת העובד</b></th>
-                                        <th><b>מספר פלאפון</b></th>
-                                        <th><b>תעודת זהות</b></th>
-                                        <th><b>האם דחוף</b></th>
-                                        <th><b>שם מלא</b></th>
+                                        <th>תעודת זהות או תיאור</th>
+                                        <th>שם משתמש</th>
+                                        <th>שם מלא</th>
                                         <th></th>
                                         </thead>
                                         <tbody>
@@ -176,7 +173,6 @@ The above copyright notice and this permission notice shall be included in all c
                     </div>
                 </div>
             </div>
-
 
 
 

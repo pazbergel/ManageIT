@@ -20,6 +20,26 @@ namespace ManageIT.Controllers
             return View();
         }
 
+        public ActionResult newuserlist()
+        {
+            return View();
+        }
+
+        public ActionResult lockeduserslist()
+        {
+            return View();
+        }
+
+        public ActionResult usermanagement()
+        {
+            return View();
+        }
+
+        public ActionResult compmanagement()
+        {
+            return View();
+        }
+
         // GET: ADMvc/Details/5
         public ActionResult Details(int id)
         {

@@ -43,33 +43,33 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="../Dashboard.cshtml">
+                        <a class="nav-link" href="@Url.Action("Dashboard", "ADMvc")">
+                            מסך ראשי
                             <i class="material-icons">dashboard</i>
-                            <p>מסך ראשי</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="@Url.Action("newuserlist", "ADMvc")">
+                            עובדים חדשים
                             <i class="material-icons">person</i>
-                            <p>עובדים חדשים</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./tables.html">
+                        <a class="nav-link" href="@Url.Action("lockeduserslist", "ADMvc")">
+                            משתמשים נעולים
                             <i class="material-icons">lock</i>
-                            <p>יוזרים נעולים</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./typography.html">
+                        <a class="nav-link" href="@Url.Action(" usermanagement", "ADMvc" )">
+                            ניהול משתמשים
                             <i class="material-icons">person</i>
-                            <p>ניהול משתמשים</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./icons.html">
+                        <a class="nav-link" href="@Url.Action(" compmanagement", "ADMvc" )">
+                            ניהול מחשבים
                             <i class="material-icons">computer</i>
-                            <p>ניהול מחשבים</p>
                         </a>
                     </li>
                     <li class="nav-item ">
