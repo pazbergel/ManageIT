@@ -14,31 +14,41 @@ namespace ManageIT.Controllers
         {
             return View(new ActiveDirectoryModels());
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
 
         public ActionResult Dashboard()
         {
             return View();
         }
 
-        public ActionResult newuserlist()
+        public ActionResult Newuserlist()
         {
             return View();
         }
 
-        public ActionResult lockeduserslist()
+        public ActionResult Lockeduserslist()
         {
             return View();
         }
 
-        public ActionResult usermanagement()
+        public ActionResult Usermanagement()
         {
             return View();
         }
 
-        public ActionResult compmanagement()
+        public ActionResult Compmanagement()
         {
             return View();
         }
+
+        public ActionResult Systemmanagement()
+        {
+            return View();
+        }
+
 
         // GET: ADMvc/Details/5
         public ActionResult Details(int id)

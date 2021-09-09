@@ -49,34 +49,35 @@ The above copyright notice and this permission notice shall be included in all c
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="@Url.Action("newuserlist", "ADMvc")">
+                        <a class="nav-link" href="@Url.Action("Newuserlist", "ADMvc")">
                             עובדים חדשים
                             <i class="material-icons">person</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action("lockeduserslist", "ADMvc")">
+                        <a class="nav-link" href="@Url.Action("Lockeduserslist", "ADMvc")">
                             משתמשים נעולים
                             <i class="material-icons">lock</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action(" usermanagement", "ADMvc" )">
+                        <a class="nav-link" href="@Url.Action("Usermanagement", "ADMvc" )">
                             ניהול משתמשים
                             <i class="material-icons">person</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="@Url.Action(" compmanagement", "ADMvc" )">
+                        <a class="nav-link" href="@Url.Action("Compmanagement", "ADMvc" )">
                             ניהול מחשבים
                             <i class="material-icons">computer</i>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./map.html">
+                        <a class="nav-link" href="@Url.Action("Systemmanagement", "ADMvc" )">
+                            ניהול מחשבים
                             <i class="material-icons">settings</i>
-                            <p>ניהול מערכת</p>
                         </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -141,17 +142,17 @@ The above copyright notice and this permission notice shall be included in all c
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="input-group no-border">
-                                <input type="text" value="" class="form-control" placeholder='סינון לפי שם מלא או תעודת זהות'>
-                                <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                                    <i class="material-icons">search</i>
-                                    <div class="ripple-container"></div>
-                                </button>
-                            </div>
-                            <br />
                             <div class="card">
                                 <div class="card-header card-header-success txt-right">
                                     <h4 class="card-category">עובדים חדשים</h4>
+                                </div>
+                                <br />
+                                <div class="input-group no-border">
+                                    <input type="text" value="" class="form-control" placeholder='סינון לפי שם מלא או תעודת זהות'>
+                                    <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                        <i class="material-icons">search</i>
+                                        <div class="ripple-container"></div>
+                                    </button>
                                 </div>
                                 <div class="list-group txt-right">
                                     <a class="list-group-item list-group-item-success">

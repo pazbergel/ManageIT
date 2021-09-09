@@ -544,10 +544,12 @@
     <Content Include="Scripts\knockout.validation.min.js.map" />
     <Content Include="Views\ADMvc\Index.cshtml" />
     <Content Include="Views\ADMvc\Dashboard.cshtml" />
-    <Content Include="Views\ADMvc\newuserlist.cshtml" />
-    <Content Include="Views\ADMvc\lockeduserslist.cshtml" />
-    <Content Include="Views\ADMvc\usermanagement.cshtml" />
-    <Content Include="Views\ADMvc\compmanagement.cshtml" />
+    <Content Include="Views\ADMvc\Newuserlist.cshtml" />
+    <Content Include="Views\ADMvc\Lockeduserslist.cshtml" />
+    <Content Include="Views\ADMvc\Usermanagement.cshtml" />
+    <Content Include="Views\ADMvc\Compmanagement.cshtml" />
+    <Content Include="Views\ADMvc\Systemmanagement.cshtml" />
+    <Content Include="Views\ADMvc\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
