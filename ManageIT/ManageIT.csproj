@@ -550,6 +550,8 @@
     <Content Include="Views\ADMvc\Compmanagement.cshtml" />
     <Content Include="Views\ADMvc\Systemmanagement.cshtml" />
     <Content Include="Views\ADMvc\Login.cshtml" />
+    <Content Include="Views\ADMvc\mailboxmgmt.cshtml" />
+    <Content Include="Views\ADMvc\otp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

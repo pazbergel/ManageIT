@@ -48,7 +48,15 @@ namespace ManageIT.Controllers
         {
             return View();
         }
+        public ActionResult mailboxmgmt()
+        {
+            return View();
+        }
 
+        public ActionResult otp()
+        {
+            return View();
+        }
 
         // GET: ADMvc/Details/5
         public ActionResult Details(int id)

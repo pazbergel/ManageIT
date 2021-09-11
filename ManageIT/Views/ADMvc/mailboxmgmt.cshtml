@@ -1,0 +1,67 @@
+﻿<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ManageIT.png">
+    <link rel="icon" type="image/png" href="../assets/img/ManageIT.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        ManageIT
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="/assets/css/material-dashboard.min.css" rel="stylesheet" />
+</head>
+<body class="">
+    <div class="wrapper ">
+
+        <div dir="rtl">
+            <h1 mat-dialog-title dir="rtl">ניהול תיבת מייל</h1>
+            <div mat-dialog-content>
+                <mat-form-field>
+                    <input matInput placeholder="שם תיבה:" [(ngModel)]="data.Name" readonly>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="שם תצוגה:" [(ngModel)]="data.DisplayName" readonly>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="כתובת מייל ראשית:" [(ngModel)]="data.PrimarySmtpAddress" readonly>
+                </mat-form-field>
+                <mat-form-field *ngIf="emailAddresses != null">
+                    <input matInput placeholder="כתובות מייל נוספות:" [(ngModel)]="emailAddresses" readonly>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Database:" [(ngModel)]="data.Database" readonly>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="גודל נוכחי ב-GB:" [(ngModel)]="data.SizeGB" readonly>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="אחוז ניצול התיבה:" [(ngModel)]="data.UsedPrecentage" readonly>
+                </mat-form-field>
+            </div>
+            <div *ngIf="!isValid" class="alert alert-danger" role="alert">
+                שים לב! לא ניתן להגדיל תיבה יותר מ- {{data.MaxMailBoxSizeGB}} גיגה
+            </div>
+            <div mat-dialog-actions>
+                <button mat-button (click)="closeDialog()">ביטול</button>
+                <button mat-button [mat-dialog-close]="data" [disabled]="!isValid" cdkFocusInitial>הגדל ב-1 GB</button>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
